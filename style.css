@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    margin: 0;
+}
+
+.estrella {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.triangulo {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 87px solid white;
+}
+
+.triangulo.invertido {
+    top: 25px;
+    transform: rotate(180deg);
+}
